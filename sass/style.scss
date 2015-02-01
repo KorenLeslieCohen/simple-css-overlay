@@ -1,0 +1,41 @@
+$pink-color: #FD8698;
+
+#outer-box {
+  width: 300px;
+  height: 194px;
+  display:block;
+  position:relative;
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+
+  #inner-box {
+    background: $pink-color;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    transition: opacity .5s;
+
+    p {
+      color: #fff;
+      line-height: 150px;
+      font-family: 'arial';
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    #inner-box {
+      opacity: .9;
+      transition: opacity .5s;
+    }
+  }
+}
+
+
