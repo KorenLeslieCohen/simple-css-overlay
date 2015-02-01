@@ -1,4 +1,5 @@
 $pink-color: #FD8698;
+$rgba-pink: rgba(253,134,152,0.8);
 
 #outer-box {
   width: 300px;
@@ -12,7 +13,7 @@ $pink-color: #FD8698;
   }
 
   #inner-box {
-    background: $pink-color;
+    background-color: $rgba-pink;
     height: 100%;
     width: 100%;
     opacity: 0;
@@ -24,15 +25,16 @@ $pink-color: #FD8698;
 
     p {
       color: #fff;
-      line-height: 150px;
+      line-height: 100px;
       font-family: 'arial';
       text-align: center;
+      font-size: 25px;
     }
   }
 
   &:hover {
     #inner-box {
-      opacity: .9;
+      opacity: 1;
       transition: opacity .5s;
     }
   }
